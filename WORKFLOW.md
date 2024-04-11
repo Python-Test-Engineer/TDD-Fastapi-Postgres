@@ -15,6 +15,7 @@ sqlalchemy.url =
 remove all containers
 clear all migrations
 docker-compose up -d
+run `alembic init` (perhaps?)
 run `alembic -n devdb revision --autogenerate -m "initial"` # gets sqlalchemy.url
 run `alembic upgrade head` - this will populate 
 run `python -m pytest  -vs` which will create test-db, add tables and run tests which will pass/ 
